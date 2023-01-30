@@ -8,7 +8,8 @@
     }
 
     section#login {
-        width: 90vw;
+        width: 75vw;
+        height: 300px;
     }
 
     section#login > div#imagem {
@@ -28,7 +29,8 @@
         background-image: linear-gradient(to top, #5864A6, #2D9AA6);
     }
     section#login {
-        width: 900px;
+        width: 800px;
+        height: 320px;
     
     }
     section#login  > div#imagem {
