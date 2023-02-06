@@ -9,6 +9,7 @@ export function update() {
     if (onSnake(food)) {
         expandSnake(EXPANSION_RATE)
         food = getRandomFoodPosition()
+        food = getRandomFoodColor()
     }
 
 }
@@ -17,6 +18,7 @@ export function draw(gameBoard) {
     const foodElement = document.createElement('div')
     foodElement.style.gridRowStart = food.y
     foodElement.style.gridColumnStart = food.x
+    foodElement.style.background  = 'blue'
     foodElement.classList.add('food')
     gameBoard.appendChild(foodElement)
 }
