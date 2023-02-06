@@ -67,10 +67,6 @@ export function snakeIntersection() {
 var touchG = []; var offset = [];
     var snake, food;
 
-    window.addEventListener("resize", resize);
-
-    window.addEventListener("keydown", keyDown);
-
     window.addEventListener("touchstart", touchStart);
 
     window.addEventListener("touchmove", touchMove);
