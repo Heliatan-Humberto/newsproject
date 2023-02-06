@@ -11,7 +11,7 @@ let lastRenderTime = 0
 let gameOver = false
 
 requestAnimationFrame(main)
-
+// caminho do site:
 function main(currentTime) {
     if (gameOver) {
         if (confirm('You lost!')) {
