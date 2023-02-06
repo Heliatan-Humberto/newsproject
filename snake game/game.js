@@ -15,7 +15,7 @@ requestAnimationFrame(main)
 function main(currentTime) {
     if (gameOver) {
         if (confirm('You lost!')) {
-            location = '/snake%20game'
+            location = 'newsproject/snake%20game'
         }
         return
     }
