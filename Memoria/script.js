@@ -1,21 +1,15 @@
-
 function carregar() {
+    var revel = document.querySelector('img.quadro1')
+    var revel2 =  document.querySelector('img.quadro2')
 
-var a = window.document.getElementById('area')
-a.addEventListener('click', clicar)
-a.addEventListener('mouseenter', entrar)
-a.addEventListener('mouseout',sair)
+    revel.addEventListener('click', clicar)
+    revel2.addEventListener('click', clicar2)
 
-function clicar() {
-    a.innerText = 'clicou!'
-    a.style.background = 'lightblue'
+    function clicar() {
+        revel.src = 'imagens/350z.jpg'
+    }
+    function clicar2() {
+        revel2.src = 'imagens/Alpine.jpg'
+    }
 }
-function entrar() {
-    a.innerText ='entrou'
-    a.style.background = 'lightgreen'
-}
-function sair() {
-    a.innerText = 'saiu'
-    a.style.background = 'red'
-}
-}
+
