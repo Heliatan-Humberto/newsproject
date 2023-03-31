@@ -36,22 +36,29 @@ a {
     display: block;
     padding: 10px;
 }
-
+a:hover {
+    color: rgba(241, 180, 9, 0.918);
+}
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 900px;
     margin: auto;
     padding: 20px;
+    padding-top: 40px;
     gap: 20px;
 }
 .grid .rotation {
-    background-image: url(../imagens/banner.jpg);
+    background-image: url(../imagens/banner/banner1.jpg);
     background-size: cover;
     background-color: rgba(6, 5, 27, 0.37);
     width: 300px;
     height: 400px;
     box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, 0.411);
+}
+.grid .rotation:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 .grid .notices {
     background-color: rgba(6, 5, 27, 0.37);
@@ -65,21 +72,21 @@ a {
     padding: 20px;
 }
 .grid .classes {
-    background-image: url(../imagens/guerreiro.jpg);
-    background-color: rgba(6, 5, 27, 0.37);
-    background-size: cover;
-    box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, 0.411);
     width: 760px;
     height: 400px;
     grid-column: 1/3;
     grid-row: auto;
+    cursor: pointer;
 }
-
-
-
-
+.grid .classes img:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
 footer {
-    background-color: rgba(0, 0, 0, 0.288);
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
     color: white;
     padding: 10px;
+    margin-top: 320px ;
 }
