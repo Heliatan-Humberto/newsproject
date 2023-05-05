@@ -7,10 +7,9 @@
     <title>internet</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="../stylos/style.css">
+    <script src="../script/script.js"></script>
 </head>
-<body>
-    <header>
-    </header>
+<body onload="login()">
     <main>
         <section id="info">
             <h1>Central do Assinante</h1>
@@ -25,11 +24,13 @@
         </section>
         <section id="login">
             <h2>Logo</h2>
-            <div id="campo">
-                <label for="inum"> <span class="material-symbols-outlined">shield</span></label>
-                <input type="number" name="num" id="inum" minlength="8" maxlength="12" required placeholder="CPF/CNPJ" autocomplete="cc-number">
-            </div>
-            <input type="submit" value="Login">
+            <form action="login.php" method="post" autocomplete="on">
+                <div id="campo">
+                    <label for="inum"> <span class="material-symbols-outlined">shield</span></label>
+                    <input type="number" name="num" id="inum" minlength="8" maxlength="12" required placeholder="CPF/CNPJ" autocomplete="cc-number">
+                </div>
+                <input type="submit" value="Login">
+            </form>
         </section>
     </main>
 </body>

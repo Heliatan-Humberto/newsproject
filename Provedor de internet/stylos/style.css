@@ -8,7 +8,7 @@
 }
 
 body, html {
-    background-color: aqua;
+    background-color: rgb(12, 88, 189);
     width: 100vw;
     height: 100vh;
 }
@@ -68,6 +68,10 @@ section#login {
 section#login h2 {
     text-align: center;
     padding: 40px;
+}
+
+section#login > div > label > span {
+    padding-left: 10px;
 }
 
 div#campo input {
