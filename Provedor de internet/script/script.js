@@ -1,5 +1,7 @@
-var cpf = document.querySelector('input#inum')
+function analisar() {
+    let cpf = Number(document.querySelector('input#inum').value)
 
-function recon() {
-    if 
+    if (cpf < 0 ) {
+        window.alert('ERRO')
+    }
 }

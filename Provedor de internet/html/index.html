@@ -24,12 +24,12 @@
         </section>
         <section id="login">
             <h2>Logo</h2>
-            <form action="login.php" method="post" autocomplete="on">
+            <form autocomplete="on">
                 <div id="campo">
                     <label for="inum"> <span class="material-symbols-outlined">shield</span></label>
-                    <input type="number" name="num" id="inum" minlength="8" maxlength="12" required placeholder="CPF/CNPJ" autocomplete="cc-number">
+                    <input type="tel" name="num" id="inum" required placeholder="CPF/CNPJ" pattern="[0-9]{10,11}">
                 </div>
-                <input type="submit" value="Login">
+                <input type="submit" value="Login" onclick="analisar()">
             </form>
         </section>
     </main>
