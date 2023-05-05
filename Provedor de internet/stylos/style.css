@@ -70,7 +70,7 @@ section#login h2 {
     padding: 40px;
 }
 
-section#login > div > label > span {
+section#login > form > div > label > span {
     padding-left: 10px;
 }
 
