@@ -22,27 +22,33 @@ main {
 }
 
 section#info {
-    background-color: rgba(7, 76, 167, 0.74);
+    background-color: blue;
     height: 35vh;
     max-height: 450px;
     width: 35vw;
     max-width: 300px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.247);
     box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.247);;
-    padding: 20px;
+    padding: 5px;
 }
 
-section#info h1 {
+section#info>h1 {
     color: white;
     text-align: center;
-    padding-bottom: 15px;
-    margin-top: 20px;
+    padding-bottom: 10px;
+    margin-top: 30px;
     font-size: 1.2em;
 }
 section#info li {
     color: white;
     list-style: none;
-    margin: 15px;
+    margin: 10px;
+}
+
+span {
+    width: 30px;
+    overflow: hidden;
+    vertical-align: middle;
 }
 
 div#central {
@@ -75,17 +81,18 @@ section input[type=submit] {
     font-size: 1em;
     width: 70%;
     height: 40px;
-    background-color: #2D9AA6;
+    background-color: blue;
     color: white;
     border: none;
     border-radius: 7px;
     cursor: pointer;
     margin-top: 10px;
     margin-left: 40px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.349)
 }
 
 section input[type=submit]:hover {
-    background-color: #38D0F2;
+    background-color: rgb(7, 7, 175);
     margin-top: 9px;
     transition: 0.3s;
 }
