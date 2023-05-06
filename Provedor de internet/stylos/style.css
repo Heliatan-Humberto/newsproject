@@ -25,6 +25,7 @@ section#info {
     background-color: blue;
     height: 35vh;
     max-height: 450px;
+    min-height: 250px;
     width: 35vw;
     max-width: 300px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.247);
@@ -60,8 +61,10 @@ section#login {
     background-color: white;
     height: 35vh;
     max-height: 450px;
+    min-height: 250px;
     width: 35vw;
     max-width: 300px;
+    min-width: 250px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.247);
 }
 
@@ -100,3 +103,11 @@ section input[type=submit]:hover {
     margin-top: 9px;
     transition: 0.3s;
 }
+
+@media screen and (max-width:720px) {
+
+section#info {
+    display: none;
+}    
+}
+
