@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background-color: rgb(253, 253, 253);
+        }
+        h1 {
+            color: red;
+            margin: auto;
+            text-align: center;
+            padding-top: 50px;
+        }
+        button {
+            border-color: red;
+            color: white;
+            font-size: 1.4em;
+            background-color: red;
+            text-align: center;
+            padding: 8px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.329);
+            margin: 0 20px;
+            cursor: pointer;
+            
+        }
+        .resposta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Quer Namorar cmg?</h1>
+    </div>
+    <div class="resposta">
+        <button id="sim">Sim</button>
+        <button id="nao">Não</button>
+    </div>
+</body>
+<script>
+    const simBtn = document.querySelector('#sim');
+    const naoBtn = document.querySelector('#nao');
+
+    naoBtn.addEventListener('mouseover', ()=> {
+        naoBtn.style.position = 'absolute';
+        naoBtn.style.left = Math.floor(Math.radom()*window.innerWidth) + 'px';
+    })
+</script>
+</html>
